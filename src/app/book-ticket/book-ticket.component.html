@@ -1,0 +1,57 @@
+<div class="col-md-5 offset-md-4 card card-body mt-5">
+    <form #bookTicketForm="ngForm" (ngSubmit)="bookTicket(bookTicketForm)">
+        <h1 class="bg-info text-light card" align="center">Book Ticket</h1>
+        <h6 class="text-danger float-right">*Required Fields</h6>
+        <div class="form-group">
+            <label for="busId" class="text-success">Name
+            </label>
+            <input type="text" #busId="ngModel" ngModel name="busId" id="busId" class="form-control"
+                required placeholder="Enter Passenger Name">
+            <div *ngIf="busId.touched && busId.invalid">
+                <p class="alert alert-danger"> This field is required</p>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="numOfSeats" class="text-success">Email
+            </label>
+            <input type="text" #numOfSeats="ngModel" ngModel name="numOfSeats" id="numOfSeats" class="form-control"
+                required placeholder="Enter Mail Id">
+            <div *ngIf="numOfSeats.touched && numOfSeats.invalid">
+                <p class="alert alert-danger"> This field is required</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="numOfSeats" class="text-success">Contact No.
+            </label>
+            <input type="text" #numOfSeats="ngModel" ngModel name="numOfSeats" id="numOfSeats" class="form-control"
+                required placeholder="Enter Contact No">
+            <div *ngIf="numOfSeats.touched && numOfSeats.invalid">
+                <p class="alert alert-danger"> This field is required</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="numOfSeats" class="text-success">No.of Seats
+            </label>
+            <input type="text" #numOfSeats="ngModel" ngModel name="numOfSeats" id="numOfSeats" class="form-control"
+                required placeholder="Select No.of Seats">
+            <div *ngIf="numOfSeats.touched && numOfSeats.invalid">
+                <p class="alert alert-danger"> This field is required</p>
+            </div>
+        </div>
+         
+        <div class="form-group">
+            <label for="numOfSeats" class="text-success">Fare
+            </label>
+            <input type="text" #numOfSeats="ngModel" ngModel name="numOfSeats" id="numOfSeats" class="form-control"
+                required placeholder="Fare">
+            <div *ngIf="numOfSeats.touched && numOfSeats.invalid">
+                <p class="alert alert-danger"> This field is required</p>
+            </div>
+        </div>
+
+        <button class="btn btn-info" routerLink="/mydashboard" >Confirm</button>
+    </form>
+</div>

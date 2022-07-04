@@ -1,0 +1,9 @@
+.navbar-brand {
+    float: left;
+    padding: 12px 15px;
+    font-size: 19px;
+    line-height: 21px;
+    height: 62px;
+    max-width: 220px;
+    display: table;
+}

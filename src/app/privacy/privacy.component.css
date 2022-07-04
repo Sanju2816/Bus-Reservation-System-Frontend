@@ -1,0 +1,26 @@
+p {
+    object-position: top;
+    text-align:justify;
+    display:block;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    margin-top: 7px;
+    
+   
+}
+img{
+    border-radius: 100px;
+    margin-right: 0px;
+    margin-top: 5px;
+   padding-right: 10px;
+}
+
+h1{
+    margin-top: 5px;
+    text-align: center;
+    padding-right: 70px;
+}
+#back
+{
+    background-image: url("/assets/images/background.png");
+}
